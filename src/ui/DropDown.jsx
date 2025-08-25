@@ -61,7 +61,7 @@ export default function Accordion() {
   };
 
   return (
-    <div className="w-full max-w-4/5 md:max-w-1/2 mx-auto mt-10 mb-20 border border-gray-300 rounded-xl overflow-hidden ">
+    <div className="w-full max-w-4/5 md:max-w-1/2 mx-auto mt-10  border border-gray-300 rounded-xl overflow-hidden ">
       {accordionItems.map((item, index) => (
         <div key={index} className="border-b border-gray-300 last:border-b-0">
           <button
