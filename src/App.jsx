@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
+import Footer from './ui/Footer';
 import './App.css'
 import LogoLoop from './ui/LogoLoop';
 import casona from './assets/images/1.svg';
@@ -96,7 +97,7 @@ function App() {
         </button>
       </motion.div>
 
-
+      <Footer/>
 
       
     </>
