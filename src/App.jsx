@@ -23,44 +23,44 @@ const imageLogos = [
 function App() {
   return (
     <>
-      <div className='animated-gradient w-full h-[90dvh] md:h-[80dvh] absolute -z-10'>
+      <div className='animated-gradient w-full h-[80dvh] flex flex-col items-center -z-10'>
         
-      </div>
-      <div className='m-auto flex flex-col justify-center items-center w-full h-[100dvh] gap-10 z-10 text-white'> 
-        <div className='text-lg md:text-2xl text-white px-7 py-1 rounded-lg font-semibold'><span>Bienvenido!</span> <span className='font-bold'>La Casona del llano</span></div>
-        <motion.div 
-        initial={{ opacity: 0, y: -50 }} 
-        animate={{ opacity: 1, y: 0 }}    
-        exit={{ opacity: 0, y: 50 }}      
-        transition={{ duration: 0.5 }}     
-        className='w-4/5 md:w-1/2 flex flex-col justify-center items-center gap-5 text-center'>
-          <h1 className='font-bold text-4xl md:text-6xl text-white drop-shadow-xl drop-shadow-white/10'>
-            Axiology Document Manager
-          </h1>
-          <p className='text-lg md:text-2xl'>Bienvenido, aquí encontrarás los formato de tu interes</p>
-        </motion.div>
-        <motion.button 
-        initial={{ opacity: 0, x: -50 }}   
-        animate={{ opacity: 1, x: 0 }}     
-        exit={{ opacity: 0, x: 50 }}      
-        transition={{ duration: 0.5 }}    
-        type="button" className="bg-[#111111] text-center rounded-2xl h-16 relative text-white text-xl group cursor-pointer shadow-lg hover:shadow-[#00b4fc] hover:scale-100 duration-500 px-16 border-4 border-[#111111]"   
-        onClick={() => {
-          const element = document.getElementById("info-section");
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-          }
-        }}>
-          <div className="bg-gradient-to-r from-[#005bc5] to-[#00b4fc] rounded-xl h-14 w-1/5 grid place-items-center absolute left-0 top-0 group-hover:w-full z-10 duration-500 text-white">
-              <FaArrowRight className="transform transition-transform duration-500 group-hover:rotate-90" />
-          </div>
-          <p className="translate-x-4">Adquirir Formatos</p>
-        </motion.button>
+        <div className='m-auto flex flex-col justify-center items-center w-full h-[100dvh] gap-10 z-10 text-white'> 
+          <div className='text-lg md:text-2xl text-white px-7 py-1 rounded-lg font-semibold'><span>Bienvenido!</span> <span className='font-bold'>La Casona del llano</span></div>
+          <motion.div 
+          initial={{ opacity: 0, y: -50 }} 
+          animate={{ opacity: 1, y: 0 }}    
+          exit={{ opacity: 0, y: 50 }}      
+          transition={{ duration: 0.5 }}     
+          className='w-4/5 md:w-1/2 flex flex-col justify-center items-center gap-5 text-center'>
+            <h1 className='font-bold text-4xl md:text-6xl text-white drop-shadow-xl drop-shadow-white/10'>
+              Axiology Document Manager
+            </h1>
+            <p className='text-lg md:text-2xl'>Bienvenido, aquí encontrarás los formato de tu interes</p>
+          </motion.div>
+          <motion.button 
+          initial={{ opacity: 0, x: -50 }}   
+          animate={{ opacity: 1, x: 0 }}     
+          exit={{ opacity: 0, x: 50 }}      
+          transition={{ duration: 0.5 }}    
+          type="button" className="bg-[#111111] text-center rounded-2xl h-16 relative text-white text-xl group cursor-pointer shadow-lg hover:shadow-[#00b4fc] hover:scale-100 duration-500 px-16 border-4 border-[#111111]"   
+          onClick={() => {
+            const element = document.getElementById("info-section");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }}>
+            <div className="bg-gradient-to-r from-[#005bc5] to-[#00b4fc] rounded-xl h-14 w-1/5 grid place-items-center absolute left-0 top-0 group-hover:w-full z-10 duration-500 text-white">
+                <FaArrowRight className="transform transition-transform duration-500 group-hover:rotate-90" />
+            </div>
+            <p className="translate-x-4">Adquirir Formatos</p>
+          </motion.button>
+        </div>
       </div>
       <div 
       id="info-section" className='flex flex-col justify-center items-center gap-10 py-15'>
         <div
-        className="absolute bottom-0 w-full flex justify-center items-center hidden sm:flex"
+        className="w-full flex justify-center items-center "
         style={{
           height: "100px",
           width: "100%",
