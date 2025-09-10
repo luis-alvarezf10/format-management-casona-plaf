@@ -2,8 +2,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import Footer from './ui/Footer';
 import './App.css'
 import casona from './assets/images/1.svg';
-import axiology from './assets/images/2.svg';
-import la from './assets/images/3.svg';
 import plaf from './assets/images/4.svg';
 
 import { FaArrowRight, FaDownload } from "react-icons/fa";
@@ -21,6 +19,16 @@ const imageLogos = [
 ];
 
 function App() {
+  const handleDownload = () => {
+    const fileName = "Formato.rar";
+    const link = document.createElement("a");
+    link.href = `public/assets/documents/${fileName}`;
+    link.download = fileName;
+    document.body.appendChild(link); // ✅ aquí está el cambio
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <div className='animated-gradient w-full h-[80dvh] flex flex-col items-center -z-10'>
@@ -94,17 +102,13 @@ function App() {
           <InfoDropdown />
         </div>
         <button type="button" className="bg-[#111111] text-center rounded-2xl h-16 relative text-white text-xl group cursor-pointer shadow-lg hover:shadow-[#00b4fc] hover:scale-100 duration-500 px-16 border-4 border-[#111111]"   
-        onClick={() => {
-          const element = document.getElementById("info-section");
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-          }
-        }}>
+        onClick={handleDownload}>
           <div className="bg-gradient-to-r from-[#005bc5] to-[#00b4fc] rounded-xl h-14 w-1/5 grid place-items-center absolute right-0 top-0 group-hover:w-full z-10 duration-500 text-white">
               <FaDownload className="transform transition-transform duration-500 group-hover:scale-140" />
           </div>
           <p className="-translate-x-4">Instalar Formatos</p>
         </button>
+        <span>¿No tienes una aplicación para comprimir y descomprimir archivos <strong>.rar</strong>? <a href="https://drive.google.com/drive/folders/16vhHAnxhzHQpKgy7hbxqsHPLk4MvWSch?usp=sharing" target="_blanck" className="text-blue-500 underline font-bold">Click para descargar</a> </span>
       </div>
       <div className="w-[90%] h-0.5 bg-gray-300 mx-auto"></div>
       <motion.div
@@ -119,7 +123,7 @@ function App() {
           Axiology Document Manager es un servicio solicitado de parte del cliente diseñado para facilitar la gestión de documentos del ambito legal. Con una interfaz intuitiva y funcionalidades avanzadas, permite a los usuarios crear, almacenar, organizar y acceder a sus documentos de manera eficiente.
         </p>
         <p className="text-gray-500 text-lg my-5">
-          Este sistema fue desarrollado por <span className="font-semibold bg-gray-500 text-white p-1 rounded-lg"> <a href="https://luis-alvarezf10.github.io/portafolio-personal/">Luis Álvarez</a></span>, desarrolador software. Su objetivo es mejorar la productividad y la organización en el manejo de documentos legales, proporcionando una herramienta confiable y fácil de usar.
+          Este sistema fue desarrollado por <span className="font-semibold bg-gray-500 text-white p-1 rounded-lg"> <a href="https://luis-alvarezf10.github.io/portafolio-personal/" target="_blanck">Luis Álvarez</a></span>, desarrolador software. Su objetivo es mejorar la productividad y la organización en el manejo de documentos legales, proporcionando una herramienta confiable y fácil de usar.
         </p>
         <Carousel />
       </motion.div>

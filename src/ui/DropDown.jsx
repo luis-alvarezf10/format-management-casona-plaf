@@ -1,3 +1,4 @@
+import { title } from "framer-motion/client";
 import { useState } from "react";
 
 const accordionItems = [
@@ -41,17 +42,38 @@ const accordionItems = [
       </>
     ),
   },
+  // {
+  //   title: "Disfrute de vacaciones",
+  //   content: (
+  //     <>
+  //       <p className="mb-2 text-gray-500 ">
+  //         El disfrute de vacaciones se refiere al período de tiempo durante el cual un empleado se ausenta de sus labores para descansar y recuperarse, manteniendo su derecho a recibir su salario habitual. Este derecho está regulado por las leyes laborales y suele estar determinado por la antigüedad del trabajador en la empresa.  
+  //       </p>
+  //     </>
+  //   ),
+  // },
   {
-    title: "Disfrute de vacaciones",
+    title: "Recibo de pago de vacaciones",
+    content:(
+      <>
+        <p className="mb-2 text-gray-500 ">
+          Un recibo de pago de vacaciones es un documento que confirma que un empleado ha recibido un pago por las vacaciones correspondientes a un período determinado. Este recibo detalla la cantidad pagada, las deducciones aplicadas y el pago neto recibido por el empleado.
+        </p>
+      </>
+    )
+  },
+  {
+    title: "Beneficios de sociales de caracter no salarial",
     content: (
       <>
         <p className="mb-2 text-gray-500 ">
-          El disfrute de vacaciones se refiere al período de tiempo durante el cual un empleado se ausenta de sus labores para descansar y recuperarse, manteniendo su derecho a recibir su salario habitual. Este derecho está regulado por las leyes laborales y suele estar determinado por la antigüedad del trabajador en la empresa.  
+          Los beneficios de sociales de caracter no salarial son beneficios que se otorgan a un trabajador en relación con su empleador, pero que no tienen relación directa con su remuneración. Estos beneficios pueden incluir vacaciones, bonos, indemnizaciones, subsidios, entre otros.
         </p>
       </>
     ),
-  },
+  }
 ];
+
 
 export default function Accordion() {
   const [openIndex, setOpenIndex] = useState(0); // Primera sección abierta
