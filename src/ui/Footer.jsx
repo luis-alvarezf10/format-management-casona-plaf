@@ -23,7 +23,7 @@ export default function Footer() {
                             <a href="https://luis-alvarezf10.github.io/portafolio-personal/" class="hover:underline">Portafolio</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">WhatsApp</a>
+                            <a href="https://wa.link/p8zz2b" class="hover:underline">WhatsApp</a>
                         </li>
                         <li class="mb-4">
                             <a href="https://www.instagram.com/luis_alvarezf10" class="hover:underline">Instagram</a>

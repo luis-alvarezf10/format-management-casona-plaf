@@ -4,7 +4,7 @@ import './App.css'
 import casona from './assets/images/1.svg';
 import plaf from './assets/images/4.svg';
 
-import { FaArrowRight, FaDownload } from "react-icons/fa";
+import { FaArrowRight, FaDownload, FaGoogleDrive } from "react-icons/fa";
 
 
 import InfoDropdown from './ui/DropDown';
@@ -101,14 +101,23 @@ function App() {
         <div>
           <InfoDropdown />
         </div>
-        <button type="button" className="bg-[#111111] text-center rounded-2xl h-16 relative text-white text-xl group cursor-pointer shadow-lg hover:shadow-[#00b4fc] hover:scale-100 duration-500 px-16 border-4 border-[#111111]"   
-        onClick={handleDownload}>
-          <div className="bg-gradient-to-r from-[#005bc5] to-[#00b4fc] rounded-xl h-14 w-1/5 grid place-items-center absolute right-0 top-0 group-hover:w-full z-10 duration-500 text-white">
-              <FaDownload className="transform transition-transform duration-500 group-hover:scale-140" />
+        <div className="flex items-center justify-center gap-5">
+          <button type="button" className="bg-[#111111] text-center rounded-2xl h-16 relative text-white text-xl group cursor-pointer shadow-lg hover:shadow-[#00b4fc] hover:scale-100 duration-500 px-16 border-4 border-[#111111]"   
+          onClick={handleDownload}>
+            <div className="bg-gradient-to-r from-[#005bc5] to-[#00b4fc] rounded-xl h-14 w-1/5 grid place-items-center absolute right-0 top-0 group-hover:w-full z-10 duration-500 text-white">
+                <FaDownload className="transform transition-transform duration-500 group-hover:scale-140" />
           </div>
           <p className="-translate-x-4">Instalar Formatos</p>
         </button>
-        <span>¿No tienes una aplicación para comprimir y descomprimir archivos <strong>.rar</strong>? <a href="https://drive.google.com/drive/folders/16vhHAnxhzHQpKgy7hbxqsHPLk4MvWSch?usp=sharing" target="_blanck" className="text-blue-500 underline font-bold">Click para descargar</a> </span>
+        <button type="button" className="bg-gradient-to-r from-[#005bc5] to-[#00b4fc] text-center rounded-2xl h-16 relative text-white text-xl group cursor-pointer shadow-lg hover:shadow-[#00b4fc] hover:scale-100 duration-500 px-16 border-4 border-[#005bc5] shadow-[#111111]/50"   
+        onClick={handleDownload}>
+          <div className="bg-white rounded-xl h-14 w-1/5 grid place-items-center absolute right-0 top-0 group-hover:w-full z-10 duration-500 text-[#005bc5]">
+              <FaGoogleDrive className="transform transition-transform duration-500 group-hover:scale-140" />
+          </div>
+          <p className="-translate-x-4">Abrir Drive</p>
+        </button>
+        </div>
+        <span>¿No tienes una aplicación para comprimir y descomprimir archivos <strong>.rar</strong>? <a href="https://drive.google.com/drive/folders/12nqjped7VeFcxvjaecJbhe8TDfwFghqx?usp=drive_link" target="_blanck" className="text-blue-500 underline font-bold">Click para descargar</a> </span>
       </div>
       <div className="w-[90%] h-0.5 bg-gray-300 mx-auto"></div>
       <motion.div
