@@ -102,7 +102,7 @@ function App() {
         <div>
           <InfoDropdown />
         </div>
-        <div className="flex items-center justify-center gap-5">
+        <div className="flex md:flex-row flex-col items-center justify-center gap-5">
           <button type="button" className="bg-[#111111] text-center rounded-2xl h-16 relative text-white text-xl group cursor-pointer shadow-lg hover:shadow-[#00b4fc] hover:scale-100 duration-500 px-16 border-4 border-[#111111]"   
           onClick={handleDownload}>
             <div className="bg-gradient-to-r from-[#005bc5] to-[#00b4fc] rounded-xl h-14 w-1/5 grid place-items-center absolute right-0 top-0 group-hover:w-full z-10 duration-500 text-white">
@@ -118,7 +118,9 @@ function App() {
           <p className="-translate-x-4">Abrir Drive</p>
         </button>
         </div>
-        <span>¿No tienes una aplicación para comprimir y descomprimir archivos <strong>.rar</strong>? <a href="https://drive.google.com/drive/folders/12nqjped7VeFcxvjaecJbhe8TDfwFghqx?usp=drive_link" target="_blanck" className="text-blue-500 underline font-bold">Click para descargar</a> </span>
+        <div className="w-3/4 md:w-1/2 mx-auto text-center">
+          <span>¿No tienes una aplicación para comprimir y descomprimir archivos <strong>.rar</strong>? <a href="https://drive.google.com/drive/folders/12nqjped7VeFcxvjaecJbhe8TDfwFghqx?usp=drive_link" target="_blanck" className="text-blue-500 underline font-bold">Click para descargar</a> </span>
+        </div>
       </div>
       <div className="w-[90%] h-0.5 bg-gray-300 mx-auto"></div>
       <motion.div

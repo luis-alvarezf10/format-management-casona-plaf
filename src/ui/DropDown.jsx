@@ -89,7 +89,7 @@ export default function Accordion() {
           <button
             onClick={() => toggle(index)}
             className={`flex items-center justify-between w-full p-5 font-medium text-left text-[#222222]  transition-colors gap-3  cursor-pointer ${
-              openIndex === index ? "bg-[#111111] text-bluze-600 dark:text-white" : ""
+              openIndex === index ? "bg-[#111111] text-white" : ""
             }`}
           >
             <span>{item.title}</span>
