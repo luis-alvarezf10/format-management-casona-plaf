@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(),],
-  base : '/format-management-casona-plaf/',
+  base : './',
   server: {
     host: true, // Permite acceder desde otra máquina de la misma red
     port: 5173, // Puedes dejar el puerto por defecto o cambiarlo
