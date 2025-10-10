@@ -22,9 +22,9 @@ function App() {
   const handleDownload = () => {
     const fileName = "Formato.rar";
     const link = document.createElement("a");
-    link.href = `public/assets/documents/${fileName}`;
+    link.href = `/assets/documents/${fileName}`;
     link.download = fileName;
-    document.body.appendChild(link); // ✅ aquí está el cambio
+    document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
