@@ -20,13 +20,14 @@ const imageLogos = [
 
 function App() {
   const handleDownload = () => {
-    const fileName = "Formato.rar";
     const link = document.createElement("a");
-    link.href = `/assets/documents/${fileName}`;
-    link.download = fileName;
-    document.body.appendChild(link);
+    link.href = `${import.meta.env.BASE_URL}assets/documents/Formato.rar`;
+    link.download = "Formato.rar";
     link.click();
-    document.body.removeChild(link);
+  };
+
+  const openDrive = () => {
+    window.open('https://drive.google.com/drive/folders/12nqjped7VeFcxvjaecJbhe8TDfwFghqx?usp=drive_link', '_blank');
   };
 
   return (
@@ -110,8 +111,8 @@ function App() {
           <p className="-translate-x-4">Instalar Formatos</p>
         </button>
         <button type="button" className="bg-gradient-to-r from-[#005bc5] to-[#00b4fc] text-center rounded-2xl h-16 relative text-white text-xl group cursor-pointer shadow-lg hover:shadow-[#00b4fc] hover:scale-100 duration-500 px-16 border-4 border-[#005bc5] shadow-[#111111]/50"   
-        onClick={handleDownload}>
-          <div className="bg-white rounded-xl h-14 w-1/5 grid place-items-center absolute right-0 top-0 group-hover:w-full z-10 duration-500 text-[#005bc5]">
+        onClick={openDrive}>
+          <div className="bg-white rounded-xl h-14 w-1/5 grid place-items-center absolute right-0 top-0 group-hover:w-full z-10 duration-500 text-[#00b4fc]">
               <FaGoogleDrive className="transform transition-transform duration-500 group-hover:scale-140" />
           </div>
           <p className="-translate-x-4">Abrir Drive</p>
