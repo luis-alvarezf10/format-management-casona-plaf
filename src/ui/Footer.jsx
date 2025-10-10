@@ -9,7 +9,7 @@ export default function Footer() {
             <div class="mb-6 md:mb-0">
                 <a href="https://flowbite.com/" class="flex items-center">
                     <img src={axiology} class="h-8 me-3" alt="FlowBite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Axiology Document Manager</span>
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Axiology Document Manager</span>
                 </a>
                 <p class="mt-4 text-gray-500 dark:text-gray-400 max-w-2xl">
                     Axiology Document Manager es una herramienta diseñada para simplificar y optimizar la gestión de documentos empresariales, facilitando el acceso, organización y colaboración en un entorno seguro y eficiente.
