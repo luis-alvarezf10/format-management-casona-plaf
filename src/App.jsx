@@ -135,7 +135,7 @@ function App() {
           Axiology Document Manager es un servicio solicitado de parte del cliente diseñado para facilitar la gestión de documentos del ambito legal. Con una interfaz intuitiva y funcionalidades avanzadas, permite a los usuarios crear, almacenar, organizar y acceder a sus documentos de manera eficiente.
         </p>
         <p className="text-gray-500 text-lg my-5">
-          Este sistema fue desarrollado por <span className="font-semibold bg-gray-500 text-white p-1 rounded-lg"> <a href="https://luis-alvarezf10.github.io/portafolio-personal/" target="_blanck">Luis Álvarez</a></span>, desarrolador software. Su objetivo es mejorar la productividad y la organización en el manejo de documentos legales, proporcionando una herramienta confiable y fácil de usar.
+          Este sistema fue desarrollado por <span className="font-semibold bg-gray-500 text-white p-1 rounded-lg"> <a href="https://luis-alvarezf10.github.io/portafolio-personal/" target="_blanck">Luis Álvarez</a></span>, <strong>desarrolador software </strong>. 
         </p>
         <Carousel />
       </motion.div>
