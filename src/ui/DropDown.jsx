@@ -2,16 +2,16 @@ import { title } from "framer-motion/client";
 import { useState } from "react";
 
 const accordionItems = [
-  {
-    title: "Contrato individual de trabajo por tiempo indeterminado",
-    content: (
-      <>
-        <p className="mb-2 text-gray-500 ">
-          Sirve para formalizar la relación laboral entre un empleado y un empleador sin una fecha de finalización establecida. Es decir, el trabajador queda contratado de manera continua hasta que alguna de las partes decida terminar la relación, cumpliendo con las leyes laborales.
-        </p>
-      </>
-    ),
-  },
+  // {
+  //   title: "Contrato individual de trabajo por tiempo indeterminado",
+  //   content: (
+  //     <>
+  //       <p className="mb-2 text-gray-500 ">
+  //         Sirve para formalizar la relación laboral entre un empleado y un empleador sin una fecha de finalización establecida. Es decir, el trabajador queda contratado de manera continua hasta que alguna de las partes decida terminar la relación, cumpliendo con las leyes laborales.
+  //       </p>
+  //     </>
+  //   ),
+  // },
   {
     title: "Recibo de pago de beneficiario de alimentación",
     content: (
